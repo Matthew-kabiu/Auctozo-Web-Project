@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Poppins', serif;
+    background-color: #050505;
+}
+
+section.main-section{
+    max-width: 70%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10rem;
+    height: 140vh;
+    border-radius: 3rem;
+    background-color: #323232;
+    margin-bottom: 10rem;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+}
+
+h4.text{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    
+    outline: none;
+    border: 1px solid #ccc;
+    border-bottom-width:2px;
+    margin: 3rem 0 5rem 0 ;
+    height: 6vh;
+    width: 30vw;
+    border-radius: 1rem;
+    padding: 0 0 0 2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+input:focus{
+    border-color: #9b59b6;
+}
+
+button.register-now{
+    height: 5vh;
+    width: 15vw;
+    background-color: black;
+    color: white;
+    border-radius: 4rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+button.register-now:hover{
+   padding-left: 1.2rem;
+   padding-right: 1.2rem;
+    color:blue;  
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    display: block;
+}
+.content-footer{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+h5{
+    color:white;
+    font-size: 2rem;
+    font-weight: normal;
+}
+.contact-link{
+    font-size: 1.5rem;
+}
+
+.contact-link:hover{
+    color: purple;
+}
+/*Start of footer section*/
+
+section.footer-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section{
+    height: 70vh;
+    width: 90%;
+    margin: auto;
+}
+.footer-parent{
+    color: white;  
+    display: flex;
+}
+
+.about{
+    flex:1;
+  
+}
+
+.nothing{
+    flex: 1;
+}
+
+.contact{
+    flex:1;
+}
+
+h3.header-heading{
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+}
+
+img.footer-vector-img{
+    width: 100%;
+    margin:1rem 0 1rem 0 ;
+}
+
+.footer-details{
+    
+    display: flex;
+}
+
+.section-1{
+    height: 45vh;
+    flex: 1;
+}
+.section-2{
+    flex: 1;
+    height: 45vh;
+}
+
+.section-3{
+    flex: 1;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h6.address{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+span{
+    color: blue;
+}
+
+.back-to-top{
+    display:flex;
+    justify-content: center;
+    margin: 5rem 0 0 0;
+    align-items: center;
+}
+
+a.top-link{
+    text-decoration: none;
+}
+
+h6.back-to-top-text{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+h6.back-to-top-text:hover{
+    color: blue;
+}
+
+h6.contact{
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.facebook{
+    display: flex;
+    align-items: center;
+}
+.instagram{
+    display: flex;
+    align-items: center;
+}
+.twitter{
+    display: flex;
+    align-items: center;
+}
+
+a.social-links{
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+
+a.social-links:hover{
+    color: blue;
+}
+
+/*End of footer section*/

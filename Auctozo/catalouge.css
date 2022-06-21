@@ -1,0 +1,563 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Playfair Display', serif;
+    background-color: #050505;
+    
+}
+
+/*Header Styling*/
+header{
+    display: flex;
+    width:90%;
+    margin: auto;
+    height: 15vh;
+    align-items: center;
+}
+
+.logo-details,.nav-links,.log-in-stats{
+    display: flex;
+}
+
+.logo-details{
+   
+    flex: 1;
+    
+}
+nav{
+   
+    flex: 2;
+}
+.nav-links{
+    justify-content: space-evenly ;
+    list-style: none;
+    
+    
+}
+
+.nav-link{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.log-in-stats{
+    justify-content:flex-end;
+    list-style: none;
+    align-items: center;
+    
+}
+.log-in-details{
+    
+    flex: 1;
+}
+.sign-up-btn{
+    
+    font-size: 1.5rem;
+    border: none;  
+    padding: 0.9rem;
+    margin-left: 4rem;
+    border-radius: 1.5rem;
+    color: white;
+    background-color: #4B4B4B;
+    cursor: pointer;
+    text-decoration: none;
+}
+.sign-up-btn a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.sign-up-btn:hover{
+    background-color: #9747FF;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+}
+
+.nav-link:hover{
+    color: #1D89EC;
+    opacity: 100%;
+}
+
+.log-in-btn{
+    outline: none;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.log-in-btn:hover{
+    color: #1D89EC;
+}
+
+
+/*End of NavBar Styling*/
+/*Start Of Modal Styling*/
+.modal{
+    height: 80vh;
+    width:50%;
+    background-color: grey;
+    border-radius: 1.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: ease-in 0.2s;
+    transition: ease-out 0.3s;
+}
+
+.modal-close{
+    position: absolute;
+    font-size: 1rem;
+    top: 20px;
+    right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-bg{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.bg-active{
+    visibility: visible;
+    opacity: 1; 
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    padding:1.5rem;
+}
+
+.modal-text{
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;  
+}
+
+input{
+    outline: none;
+    border: 1px solid #ccc;
+    border-bottom-width:2px;
+    margin: 3rem 0 3rem 0 ;
+    height: 6vh;
+    width: 30vw;
+    border-radius: 1rem;
+    padding: 0 0 0 2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+input:focus{
+    border-color: #9b59b6;
+}
+
+.log-in-btn{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+button.log-in{
+    height: 5vh;
+    width: 10vw;
+    background-color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 4rem;  
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 0px 5px;
+
+}
+
+button.log-in:hover{
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    color:blue;  
+}
+
+.content-footer{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+a.contact-link{
+    color: blue;
+}
+/*End Of Modal Styling*/
+
+/**Start of Hero section**/
+.hero{
+    margin: 2rem auto;
+    width: 96%;
+    height: 90vh;
+    background: url('./Images/CatalogueHero.png');
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.hero-header-text{
+    display: flex;
+    margin: 6rem 0 3rem 0;
+}
+
+h2.hero-text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 4.5rem;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.search-bar{
+    margin: 5rem 0 0 0;
+    display: flex;
+    align-items: center;
+
+}
+
+input{
+    width: 60vw;
+    height: 10vh;
+    border-radius: 3rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 2rem ;
+    outline: none;    
+    padding-left: 3rem;
+}
+
+button.search-btn{
+    width: 8vw;
+    height: 7vh;
+    border-radius: 6rem;
+    background-color: #4B4B4B;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+button.search-btn:hover{
+    background-color: #9747FF;
+    color: black;
+    font-weight: bold;
+}
+
+img.search-icon{
+    height: 5vh;
+}
+
+.active-text{
+    max-width: 95%;
+    margin: 5rem auto;
+}
+
+h4.active-text{
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+
+
+/**Start of Carousel Styling**/
+.container-fluid{
+    background-color: #141313;
+    width: 95%;
+    height: auto;
+    margin: auto;
+    border-radius: 1.5rem;
+}
+
+.auction-title{
+    display:flex;
+    justify-content: flex-start;
+    padding-left: 4rem;
+}
+h4.title {
+    color: white;
+    margin: 5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    position: absolute;
+}
+.card{
+    width:auto;
+    min-width:200px;
+    margin:9rem;
+    background-color: white;
+    border-radius: 23px;
+
+}
+.image{
+    margin:2rem;
+    
+}
+.card-body{
+    overflow: hidden;
+    min-width: none;
+}
+.card-title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    align-items: center;
+    color: #000000;
+}
+.card-text{
+    color: #4B4B4B;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    
+}
+.more-info{
+    flex:0.2;
+    display: flex;
+    
+}
+.car-logo{
+    width:25px;
+    height:25px;
+    flex:none ;
+    border: 1px solid black;
+    flex:0.1;
+    
+}
+.text{
+    flex-direction: column;
+    flex:0.1
+}
+.more-text{
+    flex:0.05;
+    display: flex;
+    margin-left: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+
+}
+.seller{
+    flex:0.05;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    margin-left: 1rem;
+    margin-top: 0rem;
+    
+}
+
+.price{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 0;
+    flex:0.05;
+    display: block;
+}
+.label{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal; 
+    margin-top: 0;
+    flex:0.05;
+    display: block;
+
+    
+
+}
+.btn-bidding{
+    background-color:#9747FF;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    margin-top: 0;
+    width:9rem;
+    display: flex;
+    text-align: right;
+    cursor: pointer;
+    color:white;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+
+    
+}
+.btn-bidding a{
+    text-decoration: none;
+    color: white!important;
+    text-align: center;
+}
+.btn-bidding:hover{
+    background-color:#000000;
+    cursor: pointer;
+}
+/**End of carousel Styling**/
+
+/*Start of footer section*/
+
+section.footer-section{
+    display: flex;
+    flex-direction: column;
+    margin:5rem;
+}
+
+.footer-section{
+    height: 70vh;
+    width: 90%;
+    margin: auto;
+}
+.footer-parent{
+    color: white;  
+    display: flex;
+}
+
+.about{
+    flex:1;
+  
+}
+
+.nothing{
+    flex: 1;
+}
+
+.contact{
+    flex:1;
+}
+
+h3.header-heading{
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+}
+
+img.footer-vector-img{
+    width: 100%;
+    margin:1rem 0 1rem 0 ;
+}
+
+.footer-details{
+    
+    display: flex;
+}
+
+.section-1{
+    height: 45vh;
+    flex: 1;
+}
+.section-2{
+    flex: 1;
+    height: 45vh;
+}
+
+.section-3{
+    flex: 1;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h6.address{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+span{
+    color: blue;
+}
+
+.back-to-top{
+    display:flex;
+    justify-content: center;
+    margin: 5rem 0 0 0;
+    align-items: center;
+}
+
+a.top-link{
+    text-decoration: none;
+}
+
+h6.back-to-top-text{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+h6.back-to-top-text:hover{
+    color: blue;
+}
+
+h6.contact{
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.facebook{
+    display: flex;
+    align-items: center;
+}
+.instagram{
+    display: flex;
+    align-items: center;
+}
+.twitter{
+    display: flex;
+    align-items: center;
+}
+
+a.social-links{
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+
+a.social-links:hover{
+    color: blue;
+}
+
+/*End of footer section*/

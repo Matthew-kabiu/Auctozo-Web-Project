@@ -1,0 +1,10 @@
+Papiichulo Brands
+
+**Pages**
+1. Home 
+2. Shop
+3. Cart
+4. Payment (Mpesa) Page 
+5.Checkout Page
+
+	

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <!--CSS Stylesheet-->
+    <link rel="stylesheet" href="cart.css">
+
+</head>
+<body>
+          <!--Start of navbar-->
+          <header>
+            <div class="logo-details">
+              <img src="./Images/Logo.png" alt="Logo" />
+            </div>
+      
+            <nav>
+              <ul class="nav-links">
+                <li><a class="nav-link" href="/index.html">Home</a></li>
+                <li><a class="nav-link" href="catalogue.html">Catalogue</a></li>
+                <li><a class="nav-link" href="bid.html">Start Bid</a></li>
+              </ul>
+            </nav>
+      
+            <div class="log-in-details">
+              <ul class="log-in-stats">
+                <button class="log-in-btn">Log in </button>
+                <button class="sign-up-btn"><a href="signup.html"> Sign Up</a></button>
+              </ul>
+            </div>
+          </header>
+        <!--End Of NavBar-->
+          <!--Start Of Modal-->
+          <div class="modal-bg">
+            <div class="modal">
+                <form class="log-in-form" action="">
+                    <div class="logo">
+                        <img src="./Images/Logo.png"  class="form-logo">                   
+                    </div>
+    
+                        <h5 class="modal-text">Type your email  and password to log in to your account</h5>
+    
+                    <div class="form-input">
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <input type="password"  name="password"  placeholder="Enter your password" required>
+                    </div>
+    
+                    <div class="log-in-btn">
+                        <button class="log-in">Log in</button>
+                    </div>
+    
+                       <div class="content-footer">
+                            <h5>Having issues? Let us know <a class="contact-link" href="#">here</a></h5>
+                        </div>
+                </form>
+    
+                <span class="modal-close">X</span>
+            </div>
+          </div>
+    
+    <!--End Of NavBar + Modal-->
+      <!--Start of Cart section-->
+      <main>
+        <section class="main-section">
+            <div class="logo">
+                <img class="logo-image" src="./Images/Logo.png" alt="logo">
+            </div>
+
+            <div class="cart-details">
+                <h4 class="cart-header">Your cart is empty !</h4>
+                <h5 class="cart-text">
+                    Browse our categories and get yourself the car of your dreams
+                </h5>
+                <div class="button">
+                  <button class="call-to-action">
+                    <a class="btn-link" href="#">START SHOPPING</a></button>
+                </div>              
+            </div>
+
+
+        </section>
+      </main>
+     <!--Start of footer section-->
+    <section class="footer-section">
+      <div class="footer-parent">
+          <div class="about">
+              <h3 class="header-heading">About</h3>
+          </div>
+          
+          <div class="nothing">
+
+          </div>
+          <div class="contact">
+              <h3 class="header-heading">Contact</h3>
+          </div>
+      </div>
+
+      <div class="footer-vector">
+          <img src="./Icons/Footer vector.svg"  class="footer-vector-img">
+      </div>
+
+      <div class="footer-details">
+
+         <div class="section-1">
+          <img src="./Images/Basemap image.png" class="map-img">
+         </div>
+
+         <div class="section-2">
+          <div class="address-details">
+              <h6 class="address">Jommo Kenyatta University Of Agriculture and Technology</h6>
+              <h6 class="address">Juja Kwale, Rd ,Juja</h6>
+              <h6 class="address">P.O BOX: <span>P.O. Box 62 000 – 00200 NAIROBI, KENYA</span></h6>
+              <h6 class="address">Telephone: <span>067-5870001-5</span></h6>
+          </div>
+
+          <div class="back-to-top">
+              <img src="./Icons/Scroll Up.svg" class="back-to-top-img">
+              <a class="top-link" href="#"><h6 class="back-to-top-text">Back to top</h6></a>
+          </div>
+         </div>
+
+         <div class="section-3">
+              <div class="section-3-header">
+                  <h6 class="contact">Reach us through the following social media platforms</h6>
+              </div>
+         
+              <div class="section-3-icons">
+                  <div class="facebook">
+                      <img  src="./Icons/Facebook.svg" alt="facebook icon"><a target="_blank" class="social-links" href="https://www.facebook.com">Facebook</a> <br>
+                  </div>
+
+                  <div class="instagram">
+                      <img src="./Icons/Instagram.svg" alt="instagram icon"><a target="_blank" class="social-links" href="https://www.instagram.com">Instagram</a> <br>
+                  </div>
+
+                  <div class="twitter">
+                      <img src="./Icons/Twitter Circled.svg" alt="twitter icon"><a target="_blank" class="social-links" href="https://www.twitter.com">Twitter</a> <br>
+                  </div>            
+              </div>
+      
+         </div>
+         </div>
+
+         <div class="footer-vector">
+          <img src="./Icons/Footer vector.svg"  class="footer-vector-img">
+      </div>
+
+      </div>
+
+  </section>
+<!--End of footer section-->
+
+<script src="modal.js"></script>
+</body>
+</html>

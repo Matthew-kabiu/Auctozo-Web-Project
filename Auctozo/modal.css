@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Playfair Display', serif;
+    background-color: #050505;
+    
+}
+
+/*Header Styling*/
+header{
+    display: flex;
+    width:90%;
+    margin: auto;
+    height: 15vh;
+    align-items: center;
+}
+
+.logo-details,.nav-links,.log-in-stats{
+    display: flex;
+}
+
+.logo-details{
+   
+    flex: 1;
+    
+}
+nav{
+   
+    flex: 2;
+}
+.nav-links{
+    justify-content: space-evenly ;
+    list-style: none;
+    
+    
+}
+
+.nav-link{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.log-in-stats{
+    justify-content:flex-end;
+    list-style: none;
+    align-items: center;
+    
+}
+.log-in-details{
+    
+    flex: 1;
+}
+.sign-up-btn{
+    
+    font-size: 1.5rem;
+    border: none;  
+    padding: 0.9rem;
+    margin-left: 4rem;
+    border-radius: 1.5rem;
+    color: white;
+    background-color: #4B4B4B;
+    cursor: pointer;
+    text-decoration: none;
+}
+.sign-up-btn a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.sign-up-btn:hover{
+    background-color: #9747FF;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+}
+
+.nav-link:hover{
+    color: #1D89EC;
+    opacity: 100%;
+}
+
+.log-in-btn{
+    outline: none;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.log-in-btn:hover{
+    color: #1D89EC;
+}
+
+
+/*End of NavBar Styling*/
+/*Start Of Modal Styling*/
+.modal{
+    height: 80vh;
+    width:50%;
+    background-color: grey;
+    border-radius: 1.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: ease-in 0.2s;
+    transition: ease-out 0.3s;
+}
+
+.modal-close{
+    position: absolute;
+    font-size: 1rem;
+    top: 20px;
+    right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-bg{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.bg-active{
+    visibility: visible;
+    opacity: 1; 
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    padding:1.5rem;
+}
+
+.modal-text{
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;  
+}
+
+input{
+    outline: none;
+    border: 1px solid #ccc;
+    border-bottom-width:2px;
+    margin: 3rem 0 3rem 0 ;
+    height: 6vh;
+    width: 30vw;
+    border-radius: 1rem;
+    padding: 0 0 0 2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+input:focus{
+    border-color: #9b59b6;
+}
+
+.log-in-btn{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+button.log-in{
+    height: 5vh;
+    width: 10vw;
+    background-color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 4rem;  
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 0px 5px;
+
+}
+
+button.log-in:hover{
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    color:blue;  
+}
+
+.content-footer{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+a.contact-link{
+    color: blue;
+}
+/*End Of Modal Styling*/

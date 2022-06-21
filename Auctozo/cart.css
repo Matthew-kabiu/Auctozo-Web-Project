@@ -1,0 +1,414 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Playfair Display', serif;
+    background-color: #050505;
+    
+}
+
+/*Header Styling*/
+header{
+    display: flex;
+    width:90%;
+    margin: auto;
+    height: 15vh;
+    align-items: center;
+}
+
+.logo-details,.nav-links,.log-in-stats{
+    display: flex;
+}
+
+.logo-details{
+   
+    flex: 1;
+    
+}
+nav{
+   
+    flex: 2;
+}
+.nav-links{
+    justify-content: space-evenly ;
+    list-style: none;
+    
+    
+}
+
+.nav-link{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.log-in-stats{
+    justify-content:flex-end;
+    list-style: none;
+    align-items: center;
+    
+}
+.log-in-details{
+    
+    flex: 1;
+}
+.sign-up-btn{
+    
+    font-size: 1.5rem;
+    border: none;  
+    padding: 0.9rem;
+    margin-left: 4rem;
+    border-radius: 1.5rem;
+    color: white;
+    background-color: #4B4B4B;
+    cursor: pointer;
+    text-decoration: none;
+}
+.sign-up-btn a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.sign-up-btn:hover{
+    background-color: #9747FF;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+}
+
+.nav-link:hover{
+    color: #1D89EC;
+    opacity: 100%;
+}
+
+.log-in-btn{
+    outline: none;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.log-in-btn:hover{
+    color: #1D89EC;
+}
+
+
+/*End of NavBar Styling*/
+/*Start Of Modal Styling*/
+.modal{
+    height: 80vh;
+    width:50%;
+    background-color: grey;
+    border-radius: 1.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: ease-in 0.2s;
+    transition: ease-out 0.3s;
+}
+
+.modal-close{
+    position: absolute;
+    font-size: 1rem;
+    top: 20px;
+    right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-bg{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.bg-active{
+    visibility: visible;
+    opacity: 1; 
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    padding:1.5rem;
+}
+
+.modal-text{
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;  
+}
+
+input{
+    outline: none;
+    border: 1px solid #ccc;
+    border-bottom-width:2px;
+    margin: 3rem 0 3rem 0 ;
+    height: 6vh;
+    width: 30vw;
+    border-radius: 1rem;
+    padding: 0 0 0 2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+input:focus{
+    border-color: #9b59b6;
+}
+
+.log-in-btn{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+button.log-in{
+    height: 5vh;
+    width: 10vw;
+    background-color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 4rem;  
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 0px 5px;
+
+}
+
+button.log-in:hover{
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    color:blue;  
+}
+
+.content-footer{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+a.contact-link{
+    color: blue;
+}
+/*End Of Modal Styling*/
+.main-section{
+    height: 80vh;
+    width: 80%;
+    margin-top:5rem;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+}
+
+.logo{    
+    margin: 4rem;    
+     display: flex;
+     justify-content: center;
+}
+
+.cart-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h4.cart-header{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2rem 0 0 0 ;
+}
+.cart-text{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 3rem 0 0 0;
+}
+button.call-to-action{
+    border:none;
+    box-shadow: 2px 2px 1em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 3rem;
+    padding: 1.7rem ;
+    margin: 3rem;   
+    background-color:#4B4B4B;
+    width:20%;    
+}
+
+.btn-link{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+}
+
+button.call-to-action:hover ,.btn-link:hover{
+    background-color: #050505;
+    color: #9747FF;
+    cursor: pointer;
+}
+.button{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Start of footer section*/
+
+section.footer-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section{
+    height: 70vh;
+    width: 90%;
+    margin: auto;
+}
+.footer-parent{
+    color: white;  
+    display: flex;
+}
+
+.about{
+    flex:1;
+  
+}
+
+.nothing{
+    flex: 1;
+}
+
+.contact{
+    flex:1;
+}
+
+h3.header-heading{
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+}
+
+img.footer-vector-img{
+    width: 100%;
+    margin:1rem 0 1rem 0 ;
+}
+
+.footer-details{
+    
+    display: flex;
+}
+
+.section-1{
+    height: 45vh;
+    flex: 1;
+}
+.section-2{
+    flex: 1;
+    height: 45vh;
+}
+
+.section-3{
+    flex: 1;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h6.address{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+span{
+    color: blue;
+}
+
+.back-to-top{
+    display:flex;
+    justify-content: center;
+    margin: 5rem 0 0 0;
+    align-items: center;
+}
+
+a.top-link{
+    text-decoration: none;
+}
+
+h6.back-to-top-text{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+h6.back-to-top-text:hover{
+    color: blue;
+}
+
+h6.contact{
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.facebook{
+    display: flex;
+    align-items: center;
+}
+.instagram{
+    display: flex;
+    align-items: center;
+}
+.twitter{
+    display: flex;
+    align-items: center;
+}
+
+a.social-links{
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+
+a.social-links:hover{
+    color: blue;
+}
+
+/*End of footer section*/
